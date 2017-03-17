@@ -3,7 +3,7 @@ def markup(original_cost, people, materials)
   new_cost = flat_markup(original_cost)
   additional_markup =  material_based_markup(materials) + person_based_markup(people)
 
- return (new_cost *(1 + additional_markup)).round(2)
+ (new_cost *(1 + additional_markup)).round(2)
 end
 
 def flat_markup(current_cost)
